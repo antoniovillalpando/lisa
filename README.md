@@ -7,9 +7,8 @@
 </h1>
 
 **LISA** es una empresa dedicada al desarrollo, revisión y difusión de investigación social aplicada a temas relacionados con el desarrollo social en México. Nos especializamos en métodos cuantitativos, análisis territorial y evaluación de políticas públicas.
-<h2>Proyectos</h2>
 
-## Proyectos
+<h2>Proyectos</h2>
 
 <table>
   <tr>
