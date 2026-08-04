@@ -22,9 +22,11 @@ Scripts utilizados para producir los resultados publicados en el Atlas. Se conse
 
 [**Consulta los scripts originales →**](codigo_original/)
 
-### 2. Versión depurada y reproducible
+### Versión depurada y reproducible
 
-Versión reorganizada y documentada del flujo de trabajo original. Su propósito será facilitar la lectura, ejecución y auditoría del código sin alterar deliberadamente las decisiones metodológicas del estudio publicado.
+Versión reorganizada del flujo de trabajo original, orientada a facilitar la lectura, ejecución y auditoría del código sin modificar deliberadamente las decisiones metodológicas del estudio publicado.
+
+[**Consulta la versión depurada →**](codigo_depurado/)
 
 ### 3. Auditoría y análisis de sensibilidad
 
