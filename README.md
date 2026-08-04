@@ -14,6 +14,15 @@
 
 [**Accede a los programas de cálculo →**](URL_DEL_REPOSITORIO)
 
+
+### Modelado de optimización geoespacial para los CECI del IMSS
+
+**Próximamente**
+
+### Cuestionario de Arquitectura Social del Aprendizaje
+
+**Próximamente**
+
 ## Dirección
 
 **Antonio Villalpando-Acuña**
