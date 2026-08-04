@@ -6,7 +6,7 @@
   <strong>Laboratorio de Investigación Social Avanzada</strong>
 </h1>
 
-**LISA** es una empresa dedicada al desarrollo, revisión y difusión de investigación social aplicada al desarrollo social en México, especialmente de los temas que tocan la calidad de vida y la viabilidad biográfica de las infancias. Nos especializamos en métodos cuantitativos, análisis territorial y evaluación de políticas públicas. Tenemos capacidad instalada para generar toda la cadena del proyecto de investigación: diseño conceptual, teórico y metodológico, implementación metodológica con técnicas de vanguardia y generación de productos autocontenidos y explicables para todos los públicos.
+**LISA** es una empresa dedicada a la investigación social aplicada al desarrollo social en México, especialmente de los temas que tocan la calidad de vida y la viabilidad biográfica de las infancias. Nos especializamos en métodos cuantitativos, análisis territorial y evaluación de políticas públicas. Tenemos capacidad instalada para generar toda la cadena del proyecto de investigación: diseño conceptual, teórico y metodológico, generación de resultados con técnicas de vanguardia y creación de materiales de difusión para todos los públicos.
 
 ## Proyectos
 
