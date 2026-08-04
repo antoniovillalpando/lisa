@@ -20,5 +20,3 @@ El script comprende:
 - selección de los modelos con mejor desempeño;
 - extracción de los factores con mayor importancia predictiva;
 - generación de bases estatales generales y segmentadas por grupo de edad.
-
-El código se publica con fines de transparencia, trazabilidad y auditoría metodológica.
