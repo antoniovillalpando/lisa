@@ -29,7 +29,7 @@ La documentación completa del proyecto estará disponible próximamente.
 ## Red de colaboración
 
 [Ángel Leyva Murguía](https://www.linkedin.com/in/angel-leyva-murguia-1b9347a6/)
-[David Calderón Martín del Campo]([https://lideresmexicanos.com/los300/david-eduardo-calderon-martin-del-campo](https://www.linkedin.com/in/david-e-calderón-martín-del-campo-79b7ab16/))
+[David Calderón Martín del Campo](https://www.linkedin.com/in/david-e-calderón-martín-del-campo-79b7ab16/))
 Fernando Ruiz Ruiz
 
 ## Contacto
