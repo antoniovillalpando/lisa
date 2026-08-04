@@ -12,6 +12,31 @@ Cálculo y representación territorial de las prevalencias estatales de baja tal
 
 [**Consulta el código de prevalencias →**](prevalencias/)
 
-## Alcance
+### Modelos predictivos
 
-Esta versión no constituye una nueva estimación del Atlas. Las modificaciones realizadas corresponden principalmente a la integración de scripts, eliminación de repeticiones y organización de archivos y funciones.
+Comparación, validación y selección de los modelos utilizados para identificar patrones relacionados con los indicadores de malnutrición infantil.
+
+[**Consulta el código de modelización →**](modelos/)
+
+### Riesgos y mapas
+
+Estimación de indicadores de riesgo y generación de mapas estatales para los distintos resultados antropométricos considerados en el Atlas.
+
+[**Consulta el código de riesgos y mapas →**](riesgos_y_mapas/)
+
+### Análisis complementario
+
+Regresiones exploratorias, análisis de componentes principales, selección de variables y elaboración de tablas y gráficas auxiliares.
+
+[**Consulta los análisis complementarios →**](analisis_complementario/)
+
+## Criterios de depuración
+
+La reorganización del código contempla:
+
+- integración de scripts que realizan operaciones equivalentes;
+- eliminación de repeticiones y bloques residuales;
+- sustitución de selecciones de columnas por posición cuando sea posible;
+- concentración de parámetros y archivos de entrada;
+- separación clara entre insumos, procesamiento y productos;
+- conservación de la lógica sustantiva utilizada en el estudio publicado.
