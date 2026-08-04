@@ -33,7 +33,7 @@
 - Fernando Ruiz Ruiz
 - [Luis Daniel Rodríguez](https://www.linkedin.com/in/luis-daniel-rodríguez-27a0b5273/)
 - [Gustavo Rojas Ayala](https://www.linkedin.com/in/gustavorojasayala/)
-- 
+ 
 
 ## Contacto
 
