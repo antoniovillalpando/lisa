@@ -12,17 +12,19 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td valign="top">
 <h3>Atlas de Riesgos para la Nutrición de la Niñez en México</h3>
 <p><a href="proyectos/atlas-riesgos/programas/"><strong>Accede a los programas de cálculo →</strong></a></p>
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td valign="top">
 <h3>Modelo de optimización geoespacial para los Centros de Educación y Cuidado Infantil del IMSS</h3>
 <p><strong>Próximamente</strong></p>
 </td>
 </tr>
 <tr>
-<td colspan="2" valign="top">
+<td valign="top">
 <h3>Cuestionario de Arquitectura Social del Aprendizaje</h3>
 <p><strong>Próximamente</strong></p>
 </td>
