@@ -10,16 +10,16 @@
 
 ## Proyectos
 
-### - Atlas de Riesgos para la Nutrición de la Niñez en México
+- ### Atlas de Riesgos para la Nutrición de la Niñez en México
 
 [**Accede a los programas de cálculo →**](URL_DEL_REPOSITORIO)
 
 
-### - Modelado de optimización geoespacial para los CECI del IMSS
+- ### Modelado de optimización geoespacial para los CECI del IMSS
 
 **Próximamente**
 
-### - Cuestionario de Arquitectura Social del Aprendizaje
+- ### Cuestionario de Arquitectura Social del Aprendizaje
 
 **Próximamente**
 
