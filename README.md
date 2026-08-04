@@ -31,6 +31,8 @@ La documentación completa del proyecto estará disponible próximamente.
 - [Ángel Leyva Murguía](https://www.linkedin.com/in/angel-leyva-murguia-1b9347a6/)
 - [David Calderón Martín del Campo](https://www.linkedin.com/in/david-e-calderón-martín-del-campo-79b7ab16/)
 - Fernando Ruiz Ruiz
+- [Luis Daniel Rodríguez](https://www.linkedin.com/in/luis-daniel-rodríguez-27a0b5273/)
+- [Gustavo Rojas Ayala](https://www.linkedin.com/in/gustavorojasayala/)
 
 ## Contacto
 
