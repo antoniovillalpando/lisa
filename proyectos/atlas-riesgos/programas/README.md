@@ -43,5 +43,3 @@ El código fuente se comparte como información abierta por un compromiso con la
 La disponibilidad del código no implica la cesión de los derechos asociados al producto publicado. Todos los derechos de reproducción, difusión y representación del **Atlas de Riesgos para la Nutrición de la Niñez en México** y de sus materiales institucionales permanecen atribuidos a **CEIDON†** y **Save the Children México**.
 
 La reutilización o modificación del código deberá reconocer su procedencia y no podrá presentarse como una versión oficial del Atlas ni como un producto elaborado o avalado por dichas organizaciones.
-
-† *CEIDON ya no se encuentra en operación.*
