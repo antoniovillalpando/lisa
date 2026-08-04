@@ -20,6 +20,8 @@ El repositorio se organizará en tres componentes:
 
 Scripts utilizados para producir los resultados publicados en el Atlas. Se conservan sin modificar su lógica sustantiva, con el propósito de mantener la trazabilidad del estudio.
 
+[**Consulta los scripts originales →**](codigo_original/)
+
 ### 2. Versión depurada y reproducible
 
 Versión reorganizada y documentada del flujo de trabajo original. Su propósito será facilitar la lectura, ejecución y auditoría del código sin alterar deliberadamente las decisiones metodológicas del estudio publicado.
