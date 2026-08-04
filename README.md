@@ -14,8 +14,7 @@
 
 [**Accede a los programas de cálculo →**](URL_DEL_REPOSITORIO)
 
-
-- ### Modelado de optimización geoespacial para los CECI del IMSS
+- ### Modelo de optimización geoespacial para los Centros de Educación y Cuidado Infantil del IMSS
 
 **Próximamente**
 
