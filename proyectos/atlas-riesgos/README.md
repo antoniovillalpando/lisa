@@ -8,4 +8,6 @@ El resultado más notable fue la identificación de la violencia intrafamiliar c
 
 ## Materiales del proyecto
 
+[Publicación del estudio](https://savethechildren.mx/wp-content/uploads/2025/02/atlas_riesgos_de_nutricion.pdf)
+
 [**Accede a los programas de cálculo →**](programas/)
