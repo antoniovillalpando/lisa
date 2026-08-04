@@ -19,3 +19,10 @@ El script comprende:
 - integración de los resultados con el Marco Geoestadístico Estatal;
 - elaboración de mapas de riesgo para los distintos indicadores antropométricos;
 - generación de mapas auxiliares de factores asociados.
+
+## Ejecución
+
+Ejecutar:
+
+```r
+source("03_riesgos_y_mapas.R")
