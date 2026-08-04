@@ -2,7 +2,9 @@
   <img src="lisa_logo.png" alt="Laboratorio de Investigación Social Avanzada" width="100%">
 </p>
 
-# Laboratorio de Investigación Social Avanzada
+<h1 align="center">
+  <strong>Laboratorio de Investigación Social Avanzada</strong>
+</h1>
 
 **LISA** es una empresa dedicada al desarrollo, revisión y difusión de investigación social aplicada a temas relacionados con el desarrollo social en México. Nos especializamos en métodos cuantitativos, análisis territorial y evaluación de políticas públicas.
 
