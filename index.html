@@ -188,12 +188,28 @@
     }
 
     .tarjeta {
-      min-height: 290px;
+      min-height: 310px;
       padding: 28px;
       border: 1px solid var(--borde);
       border-radius: 12px;
       background: var(--blanco);
       box-shadow: 0 8px 24px rgba(23, 45, 66, 0.04);
+    }
+
+    .tarjeta-enlace {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+      transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        border-color 0.18s ease;
+    }
+
+    .tarjeta-enlace:hover {
+      transform: translateY(-4px);
+      border-color: #b8c3b8;
+      box-shadow: 0 14px 32px rgba(23, 45, 66, 0.10);
     }
 
     .estado {
@@ -215,6 +231,14 @@
     .tarjeta p {
       margin-bottom: 0;
       color: #46515c;
+    }
+
+    .enlace-proyecto {
+      display: inline-block;
+      margin-top: 24px;
+      color: var(--verde);
+      font-size: 15px;
+      font-weight: 750;
     }
 
     .direccion-red {
@@ -277,6 +301,18 @@
       max-width: 700px;
       margin-bottom: 0;
       color: #dce5ea;
+    }
+
+    .contacto-datos {
+      text-align: right;
+    }
+
+    .correo-visible {
+      margin-bottom: 12px;
+      color: var(--blanco);
+      font-size: 17px;
+      font-weight: 600;
+      white-space: nowrap;
     }
 
     .boton {
@@ -345,6 +381,15 @@
       .contacto {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .contacto-datos {
+        text-align: left;
+      }
+
+      .correo-visible {
+        white-space: normal;
+        overflow-wrap: anywhere;
       }
     }
   </style>
@@ -419,7 +464,13 @@
 
         <div class="proyectos">
 
-          <article class="tarjeta">
+          <a
+            class="tarjeta tarjeta-enlace"
+            href="https://github.com/antoniovillalpando/lisa/tree/main/proyectos/atlas-riesgos/programas"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir los programas de cálculo del Atlas de Riesgos para la Nutrición de la Niñez en México"
+          >
             <span class="estado">Proyecto desarrollado</span>
 
             <h3>
@@ -429,13 +480,17 @@
             <p>
               Integración de indicadores, análisis de correlaciones y modelización predictiva de riesgos nutricionales para niñas y niños en México.
             </p>
-          </article>
+
+            <span class="enlace-proyecto">
+              Acceder a los programas de cálculo →
+            </span>
+          </a>
 
           <article class="tarjeta">
             <span class="estado">En desarrollo</span>
 
             <h3>
-              Modelo de optimización geoespacial para CECI del IMSS
+              Modelo de optimización geoespacial para los Centros de Educación y Cuidado Infantil del IMSS
             </h3>
 
             <p>
@@ -499,9 +554,7 @@
               </a>
             </li>
 
-            <li>
-              Fernando Ruiz Ruiz
-            </li>
+            <li>Fernando Ruiz Ruiz</li>
 
             <li>
               <a
@@ -542,14 +595,20 @@
             </p>
           </div>
 
-          <a
-            class="boton"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=profesorvillalpando@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Escribir por correo
-          </a>
+          <div class="contacto-datos">
+            <div class="correo-visible">
+              profesorvillalpando@gmail.com
+            </div>
+
+            <a
+              class="boton"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=profesorvillalpando@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Escribir
+            </a>
+          </div>
 
         </div>
 
