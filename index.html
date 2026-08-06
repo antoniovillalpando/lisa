@@ -3,10 +3,578 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LISA</title>
+
+  <title>LISA | Laboratorio de Investigación Social Avanzada</title>
+
+  <style>
+    :root {
+      --azul: #172d42;
+      --verde: #5f7259;
+      --gris: #68737d;
+      --gris-claro: #f6f7f5;
+      --borde: #dfe4df;
+      --blanco: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--azul);
+      background: var(--blanco);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .contenedor {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--borde);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .marca img {
+      display: block;
+      width: 125px;
+      height: auto;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    .menu a {
+      color: var(--azul);
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .menu a:hover {
+      color: var(--verde);
+    }
+
+    .hero {
+      padding: 86px 0 78px;
+      background:
+        radial-gradient(circle at 84% 28%, rgba(95, 114, 89, 0.13), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, #fafbfa 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .hero-logo {
+      display: block;
+      width: min(540px, 100%);
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .lema {
+      max-width: 720px;
+      margin: 0;
+      color: var(--verde);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(25px, 3vw, 38px);
+      font-style: italic;
+      line-height: 1.25;
+    }
+
+    .motivo {
+      min-height: 330px;
+      position: relative;
+    }
+
+    .motivo::before,
+    .motivo::after {
+      content: "";
+      position: absolute;
+      inset: 13%;
+      border: 1px solid rgba(95, 114, 89, 0.24);
+      transform: rotate(17deg);
+    }
+
+    .motivo::after {
+      inset: 24% 3% 7% 24%;
+      transform: rotate(-14deg);
+    }
+
+    .nodo {
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--verde);
+      box-shadow: 0 0 0 8px rgba(95, 114, 89, 0.08);
+    }
+
+    .n1 { top: 14%; left: 30%; }
+    .n2 { top: 25%; right: 17%; }
+    .n3 { top: 51%; left: 13%; }
+    .n4 { top: 63%; right: 32%; }
+    .n5 { bottom: 11%; left: 47%; }
+
+    section {
+      padding: 78px 0;
+    }
+
+    section:nth-of-type(odd):not(.hero) {
+      background: var(--gris-claro);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-bottom: 28px;
+      font-size: 35px;
+      line-height: 1.2;
+    }
+
+    .introduccion {
+      max-width: 950px;
+      font-size: 20px;
+    }
+
+    .introduccion p {
+      margin-bottom: 0;
+    }
+
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .tarjeta {
+      min-height: 290px;
+      padding: 28px;
+      border: 1px solid var(--borde);
+      border-radius: 12px;
+      background: var(--blanco);
+      box-shadow: 0 8px 24px rgba(23, 45, 66, 0.04);
+    }
+
+    .estado {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--verde);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 14px;
+      font-size: 22px;
+      line-height: 1.3;
+    }
+
+    .tarjeta p {
+      margin-bottom: 0;
+      color: #46515c;
+    }
+
+    .direccion-red {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .nombre-director {
+      margin-bottom: 6px;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .cargo {
+      margin-bottom: 0;
+      color: var(--gris);
+    }
+
+    .colaboradores {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 28px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .colaboradores li {
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--borde);
+    }
+
+    .colaboradores a {
+      color: var(--azul);
+      text-decoration: none;
+    }
+
+    .colaboradores a:hover {
+      color: var(--verde);
+    }
+
+    .contacto {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      padding: 38px;
+      border-radius: 14px;
+      background: var(--azul);
+      color: var(--blanco);
+    }
+
+    .contacto h2 {
+      margin-bottom: 8px;
+    }
+
+    .contacto p {
+      max-width: 700px;
+      margin-bottom: 0;
+      color: #dce5ea;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 7px;
+      background: var(--blanco);
+      color: var(--azul);
+      text-decoration: none;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .boton:hover {
+      background: #edf1ee;
+    }
+
+    footer {
+      padding: 34px 0;
+      border-top: 1px solid var(--borde);
+      color: var(--gris);
+      font-size: 14px;
+    }
+
+    .pie-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .pie-grid a {
+      color: var(--gris);
+      text-decoration: none;
+    }
+
+    .pie-grid a:hover {
+      color: var(--verde);
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .proyectos,
+      .direccion-red {
+        grid-template-columns: 1fr;
+      }
+
+      .motivo {
+        display: none;
+      }
+
+      nav {
+        align-items: flex-start;
+        padding: 18px 0;
+        flex-direction: column;
+      }
+
+      .menu {
+        gap: 14px;
+      }
+
+      .colaboradores {
+        grid-template-columns: 1fr;
+      }
+
+      .contacto {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Laboratorio de Investigación Social Avanzada</h1>
-  <p>Las grandes causas merecen la mejor ciencia.</p>
+
+  <header>
+    <div class="contenedor">
+      <nav>
+        <a class="marca" href="#inicio" aria-label="Ir al inicio">
+          <img src="lisa_logo.png" alt="LISA">
+        </a>
+
+        <div class="menu">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#direccion">Dirección</a>
+          <a href="#red">Red de colaboración</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="contenedor hero-grid">
+
+        <div>
+          <img
+            class="hero-logo"
+            src="lisa_logo.png"
+            alt="Laboratorio de Investigación Social Avanzada"
+          >
+
+          <p class="lema">
+            Las grandes causas merecen la mejor ciencia.
+          </p>
+        </div>
+
+        <div class="motivo" aria-hidden="true">
+          <span class="nodo n1"></span>
+          <span class="nodo n2"></span>
+          <span class="nodo n3"></span>
+          <span class="nodo n4"></span>
+          <span class="nodo n5"></span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <div class="contenedor">
+
+        <h2>Nosotros</h2>
+
+        <div class="introduccion">
+          <p>
+            <strong>LISA</strong> es una empresa dedicada a la investigación social aplicada al desarrollo social en México, especialmente de los temas que tocan la calidad de vida y la viabilidad biográfica de las infancias. Nos especializamos en métodos cuantitativos, análisis territorial y evaluación de políticas públicas. Tenemos capacidad instalada para generar toda la cadena del proyecto de investigación: diseño conceptual, teórico y metodológico, generación de resultados con técnicas de vanguardia y creación de materiales de difusión para todos los públicos.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="contenedor">
+
+        <h2>Proyectos</h2>
+
+        <div class="proyectos">
+
+          <article class="tarjeta">
+            <span class="estado">Proyecto desarrollado</span>
+
+            <h3>
+              Atlas de Riesgos para la Nutrición de la Niñez en México
+            </h3>
+
+            <p>
+              Integración de indicadores, análisis de correlaciones y modelización predictiva de riesgos nutricionales para niñas y niños en México.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="estado">En desarrollo</span>
+
+            <h3>
+              Modelo de optimización geoespacial para CECI del IMSS
+            </h3>
+
+            <p>
+              Herramientas de integración territorial, optimización y generación de recomendaciones para la localización de centros de cuidado infantil.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="estado">En desarrollo</span>
+
+            <h3>
+              Cuestionario de Arquitectura Social del Aprendizaje
+            </h3>
+
+            <p>
+              Instrumento de investigación para analizar las condiciones familiares, escolares y territoriales que estructuran los procesos de aprendizaje.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="direccion">
+      <div class="contenedor direccion-red">
+
+        <div>
+          <h2>Dirección</h2>
+
+          <p class="nombre-director">
+            Antonio Villalpando-Acuña
+          </p>
+
+          <p class="cargo">
+            Director general
+          </p>
+        </div>
+
+        <div id="red">
+          <h2>Red de colaboración</h2>
+
+          <ul class="colaboradores">
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/angel-leyva-murguia-1b9347a6/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ángel Leyva Murguía
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/david-e-calderón-martín-del-campo-79b7ab16/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                David Calderón Martín del Campo
+              </a>
+            </li>
+
+            <li>
+              Fernando Ruiz Ruiz
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/luis-daniel-rodríguez-27a0b5273/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Luis Daniel Rodríguez
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/in/gustavorojasayala/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gustavo Rojas Ayala
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contenedor">
+
+        <div class="contacto">
+
+          <div>
+            <h2>Contacto</h2>
+
+            <p>
+              Para proyectos de investigación, evaluación, análisis territorial y colaboración científica.
+            </p>
+          </div>
+
+          <a
+            class="boton"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=profesorvillalpando@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Escribir por correo
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor pie-grid">
+
+      <span>
+        Laboratorio de Investigación Social Avanzada · Ciudad de México · 2026
+      </span>
+
+      <a
+        href="https://github.com/antoniovillalpando/lisa"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Repositorio institucional
+      </a>
+
+    </div>
+  </footer>
+
 </body>
 </html>
