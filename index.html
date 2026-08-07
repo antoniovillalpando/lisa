@@ -1,3 +1,6 @@
+Claro. Aquí va todo el `index.html` completo, con el banner más grande y sin repetir el logo en el menú.
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -59,15 +62,14 @@
     }
 
     .marca {
-      display: flex;
-      align-items: center;
+      color: var(--azul);
+      font-size: 15px;
+      font-weight: 700;
       text-decoration: none;
     }
 
-    .marca img {
-      display: block;
-      width: 125px;
-      height: auto;
+    .marca:hover {
+      color: var(--verde);
     }
 
     .menu {
@@ -87,28 +89,32 @@
     }
 
     .hero {
-      padding: 86px 0 78px;
+      padding: 90px 0 82px;
       background:
-        radial-gradient(circle at 84% 28%, rgba(95, 114, 89, 0.13), transparent 24%),
+        radial-gradient(
+          circle at 88% 28%,
+          rgba(95, 114, 89, 0.13),
+          transparent 25%
+        ),
         linear-gradient(180deg, #ffffff 0%, #fafbfa 100%);
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 64px;
+      grid-template-columns: 1.55fr 0.45fr;
+      gap: 48px;
       align-items: center;
     }
 
     .hero-logo {
       display: block;
-      width: min(540px, 100%);
+      width: min(760px, 100%);
       height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 34px;
     }
 
     .lema {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0;
       color: var(--verde);
       font-family: Georgia, "Times New Roman", serif;
@@ -145,11 +151,30 @@
       box-shadow: 0 0 0 8px rgba(95, 114, 89, 0.08);
     }
 
-    .n1 { top: 14%; left: 30%; }
-    .n2 { top: 25%; right: 17%; }
-    .n3 { top: 51%; left: 13%; }
-    .n4 { top: 63%; right: 32%; }
-    .n5 { bottom: 11%; left: 47%; }
+    .n1 {
+      top: 14%;
+      left: 30%;
+    }
+
+    .n2 {
+      top: 25%;
+      right: 17%;
+    }
+
+    .n3 {
+      top: 51%;
+      left: 13%;
+    }
+
+    .n4 {
+      top: 63%;
+      right: 32%;
+    }
+
+    .n5 {
+      bottom: 11%;
+      left: 47%;
+    }
 
     section {
       padding: 78px 0;
@@ -374,6 +399,14 @@
         gap: 14px;
       }
 
+      .hero {
+        padding: 58px 0 62px;
+      }
+
+      .hero-logo {
+        width: 100%;
+      }
+
       .colaboradores {
         grid-template-columns: 1fr;
       }
@@ -400,8 +433,9 @@
   <header>
     <div class="contenedor">
       <nav>
-        <a class="marca" href="#inicio" aria-label="Ir al inicio">
-          <img src="lisa_logo.png" alt="LISA">
+
+        <a class="marca" href="#inicio">
+          Inicio
         </a>
 
         <div class="menu">
@@ -411,6 +445,7 @@
           <a href="#red">Red de colaboración</a>
           <a href="#contacto">Contacto</a>
         </div>
+
       </nav>
     </div>
   </header>
@@ -469,7 +504,6 @@
             href="https://github.com/antoniovillalpando/lisa/tree/main/proyectos/atlas-riesgos/programas"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Abrir los programas de cálculo del Atlas de Riesgos para la Nutrición de la Niñez en México"
           >
             <span class="estado">Proyecto desarrollado</span>
 
@@ -511,6 +545,7 @@
           </article>
 
         </div>
+
       </div>
     </section>
 
@@ -554,7 +589,9 @@
               </a>
             </li>
 
-            <li>Fernando Ruiz Ruiz</li>
+            <li>
+              Fernando Ruiz Ruiz
+            </li>
 
             <li>
               <a
@@ -596,6 +633,7 @@
           </div>
 
           <div class="contacto-datos">
+
             <div class="correo-visible">
               profesorvillalpando@gmail.com
             </div>
@@ -608,6 +646,7 @@
             >
               Escribir
             </a>
+
           </div>
 
         </div>
@@ -637,3 +676,4 @@
 
 </body>
 </html>
+```
