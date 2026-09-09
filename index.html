@@ -168,6 +168,76 @@
       line-height: 1.25;
     }
 
+    /* Cintillo de navegación secundaria — vista previa.
+       Por ahora no tiene destinos asignados. */
+    .cintillo {
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid var(--borde);
+      border-bottom: 1px solid var(--borde);
+      background: var(--blanco);
+    }
+
+    .cintillo-viewport {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .cintillo-track {
+      display: flex;
+      width: max-content;
+      animation: cintillo-desplazamiento 24s linear infinite;
+      will-change: transform;
+    }
+
+    .cintillo:hover .cintillo-track {
+      animation-play-state: paused;
+    }
+
+    .cintillo-grupo {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      min-width: 100vw;
+      padding: 0 32px;
+    }
+
+    .cintillo-item {
+      display: inline-flex;
+      align-items: center;
+      min-height: 58px;
+      padding: 0 34px;
+      color: var(--azul);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .cintillo-item::after {
+      content: "·";
+      margin-left: 68px;
+      color: var(--verde);
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    @keyframes cintillo-desplazamiento {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cintillo-track {
+        animation: none;
+      }
+
+      .cintillo-grupo[aria-hidden="true"] {
+        display: none;
+      }
+    }
+
     section {
       padding: 78px 0;
     }
@@ -475,6 +545,26 @@
 
       </div>
     </section>
+
+    <div class="cintillo" aria-label="Accesos destacados">
+      <div class="cintillo-viewport">
+        <div class="cintillo-track">
+
+          <div class="cintillo-grupo">
+            <span class="cintillo-item">Sección 1</span>
+            <span class="cintillo-item">Sección 2</span>
+            <span class="cintillo-item">Sección 3</span>
+          </div>
+
+          <div class="cintillo-grupo" aria-hidden="true">
+            <span class="cintillo-item">Sección 1</span>
+            <span class="cintillo-item">Sección 2</span>
+            <span class="cintillo-item">Sección 3</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <section id="nosotros">
       <div class="contenedor">
