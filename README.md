@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="lisa_logo.png" alt="Laboratorio de Investigación Social Avanzada" width="100%">
+  <img src="lisa_banner.png" alt="Laboratorio de Investigación Social Avanzada" width="100%">
 </p>
 
 <h1 align="center">
