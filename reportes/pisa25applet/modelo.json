@@ -1,0 +1,366 @@
+{
+  "pais": "México",
+  "variables": ["sexo", "ESCS", "REPEAT", "BELONG", "SELFREG", "ia_ampliacion", "ia_sustitucion"],
+  "dominios": {
+    "Matematicas": {
+      "dominio": "Matematicas",
+      "codigo": "MATH",
+      "coeficientes": [
+        {
+          "term": "(Intercept)",
+          "estimate": 411.4735,
+          "varianza_muestral": 12.2487,
+          "varianza_pv": 0.4498,
+          "std.error": 3.5698,
+          "conf.low": 404.4767,
+          "conf.high": 418.4703
+        },
+        {
+          "term": "BELONG",
+          "estimate": 0.8314,
+          "varianza_muestral": 0.6469,
+          "varianza_pv": 0.1174,
+          "std.error": 0.8809,
+          "conf.low": -0.8952,
+          "conf.high": 2.558
+        },
+        {
+          "term": "ESCS",
+          "estimate": 16.1933,
+          "varianza_muestral": 1.1691,
+          "varianza_pv": 0.1113,
+          "std.error": 1.1365,
+          "conf.low": 13.9658,
+          "conf.high": 18.4208
+        },
+        {
+          "term": "REPEATSí",
+          "estimate": -43.6932,
+          "varianza_muestral": 24.3906,
+          "varianza_pv": 2.0945,
+          "std.error": 5.1667,
+          "conf.low": -53.8199,
+          "conf.high": -33.5665
+        },
+        {
+          "term": "SELFREG",
+          "estimate": 1.9627,
+          "varianza_muestral": 0.6452,
+          "varianza_pv": 0.1279,
+          "std.error": 0.8865,
+          "conf.low": 0.2251,
+          "conf.high": 3.7003
+        },
+        {
+          "term": "ia_ampliacion",
+          "estimate": 11.208,
+          "varianza_muestral": 0.9772,
+          "varianza_pv": 0.1233,
+          "std.error": 1.0549,
+          "conf.low": 9.1404,
+          "conf.high": 13.2756
+        },
+        {
+          "term": "ia_sustitucion",
+          "estimate": -9.5453,
+          "varianza_muestral": 1.0684,
+          "varianza_pv": 0.2096,
+          "std.error": 1.1397,
+          "conf.low": -11.7792,
+          "conf.high": -7.3115
+        },
+        {
+          "term": "sexoMujer",
+          "estimate": -19.2183,
+          "varianza_muestral": 2.8244,
+          "varianza_pv": 0.3249,
+          "std.error": 1.7837,
+          "conf.low": -22.7144,
+          "conf.high": -15.7221
+        }
+      ]
+    },
+    "Lectura": {
+      "dominio": "Lectura",
+      "codigo": "READ",
+      "coeficientes": [
+        {
+          "term": "(Intercept)",
+          "estimate": 419.8585,
+          "varianza_muestral": 16.5507,
+          "varianza_pv": 1.1307,
+          "std.error": 4.2184,
+          "conf.low": 411.5905,
+          "conf.high": 428.1265
+        },
+        {
+          "term": "BELONG",
+          "estimate": -1.1513,
+          "varianza_muestral": 0.962,
+          "varianza_pv": 0.1324,
+          "std.error": 1.0524,
+          "conf.low": -3.2141,
+          "conf.high": 0.9115
+        },
+        {
+          "term": "ESCS",
+          "estimate": 20.8782,
+          "varianza_muestral": 1.5971,
+          "varianza_pv": 0.1204,
+          "std.error": 1.3151,
+          "conf.low": 18.3005,
+          "conf.high": 23.4558
+        },
+        {
+          "term": "REPEATSí",
+          "estimate": -36.8747,
+          "varianza_muestral": 36.6428,
+          "varianza_pv": 1.3353,
+          "std.error": 6.1735,
+          "conf.low": -48.9747,
+          "conf.high": -24.7747
+        },
+        {
+          "term": "SELFREG",
+          "estimate": 4.7977,
+          "varianza_muestral": 0.7875,
+          "varianza_pv": 0.1222,
+          "std.error": 0.9602,
+          "conf.low": 2.9158,
+          "conf.high": 6.6797
+        },
+        {
+          "term": "ia_ampliacion",
+          "estimate": 14.7443,
+          "varianza_muestral": 1.3605,
+          "varianza_pv": 0.0715,
+          "std.error": 1.1997,
+          "conf.low": 12.393,
+          "conf.high": 17.0957
+        },
+        {
+          "term": "ia_sustitucion",
+          "estimate": -12.653,
+          "varianza_muestral": 1.4706,
+          "varianza_pv": 0.1581,
+          "std.error": 1.2824,
+          "conf.low": -15.1665,
+          "conf.high": -10.1395
+        },
+        {
+          "term": "sexoMujer",
+          "estimate": 8.5789,
+          "varianza_muestral": 3.873,
+          "varianza_pv": 0.6351,
+          "std.error": 2.1381,
+          "conf.low": 4.3882,
+          "conf.high": 12.7696
+        }
+      ]
+    },
+    "Ciencias": {
+      "dominio": "Ciencias",
+      "codigo": "SCIE",
+      "coeficientes": [
+        {
+          "term": "(Intercept)",
+          "estimate": 440.0708,
+          "varianza_muestral": 14.1162,
+          "varianza_pv": 0.9616,
+          "std.error": 3.8954,
+          "conf.low": 432.4358,
+          "conf.high": 447.7057
+        },
+        {
+          "term": "BELONG",
+          "estimate": -2.0475,
+          "varianza_muestral": 0.8185,
+          "varianza_pv": 0.1103,
+          "std.error": 0.9694,
+          "conf.low": -3.9476,
+          "conf.high": -0.1475
+        },
+        {
+          "term": "ESCS",
+          "estimate": 19.8763,
+          "varianza_muestral": 1.549,
+          "varianza_pv": 0.0753,
+          "std.error": 1.2774,
+          "conf.low": 17.3725,
+          "conf.high": 22.38
+        },
+        {
+          "term": "REPEATSí",
+          "estimate": -38.2528,
+          "varianza_muestral": 23.8282,
+          "varianza_pv": 2.3453,
+          "std.error": 5.1389,
+          "conf.low": -48.325,
+          "conf.high": -28.1806
+        },
+        {
+          "term": "SELFREG",
+          "estimate": 2.5569,
+          "varianza_muestral": 0.6457,
+          "varianza_pv": 0.0811,
+          "std.error": 0.8573,
+          "conf.low": 0.8767,
+          "conf.high": 4.2371
+        },
+        {
+          "term": "ia_ampliacion",
+          "estimate": 13.8295,
+          "varianza_muestral": 1.3437,
+          "varianza_pv": 0.136,
+          "std.error": 1.222,
+          "conf.low": 11.4343,
+          "conf.high": 16.2247
+        },
+        {
+          "term": "ia_sustitucion",
+          "estimate": -12.5754,
+          "varianza_muestral": 1.3616,
+          "varianza_pv": 0.0687,
+          "std.error": 1.1988,
+          "conf.low": -14.9251,
+          "conf.high": -10.2257
+        },
+        {
+          "term": "sexoMujer",
+          "estimate": -16.6017,
+          "varianza_muestral": 3.4547,
+          "varianza_pv": 0.3045,
+          "std.error": 1.9467,
+          "conf.low": -20.4173,
+          "conf.high": -12.7862
+        }
+      ]
+    }
+  },
+  "perfil_referencia": [
+    {
+      "sexo": "Mujer",
+      "REPEAT": "No",
+      "ESCS": -0.9021,
+      "BELONG": 0.0545,
+      "SELFREG": 0.2216,
+      "ia_ampliacion": 3.1004,
+      "ia_sustitucion": 2.7452
+    }
+  ],
+  "cobertura": [
+    {
+      "variable": "sexo",
+      "cobertura": 1
+    },
+    {
+      "variable": "ESCS",
+      "cobertura": 0.9778
+    },
+    {
+      "variable": "REPEAT",
+      "cobertura": 0.9932
+    },
+    {
+      "variable": "BELONG",
+      "cobertura": 0.9861
+    },
+    {
+      "variable": "SELFREG",
+      "cobertura": 0.8989
+    },
+    {
+      "variable": "ia_ampliacion",
+      "cobertura": 0.956
+    },
+    {
+      "variable": "ia_sustitucion",
+      "cobertura": 0.9575
+    }
+  ],
+  "rangos": [
+    {
+      "variable": "ESCS",
+      "minimo": -4.5293,
+      "p05": -2.6187,
+      "mediana": -0.9772,
+      "media": -0.9021,
+      "p95": 1.0831,
+      "maximo": 3.1984
+    },
+    {
+      "variable": "BELONG",
+      "minimo": -3.259,
+      "p05": -1.2297,
+      "mediana": -0.0632,
+      "media": 0.0545,
+      "p95": 2.7258,
+      "maximo": 2.7858
+    },
+    {
+      "variable": "SELFREG",
+      "minimo": -2.7452,
+      "p05": -1.281,
+      "mediana": -0.0604,
+      "media": 0.2216,
+      "p95": 2.0499,
+      "maximo": 2.2122
+    },
+    {
+      "variable": "ia_ampliacion",
+      "minimo": 1,
+      "p05": 1,
+      "mediana": 3,
+      "media": 3.1004,
+      "p95": 5,
+      "maximo": 5
+    },
+    {
+      "variable": "ia_sustitucion",
+      "minimo": 1,
+      "p05": 1,
+      "mediana": 2.5,
+      "media": 2.7452,
+      "p95": 5,
+      "maximo": 5
+    }
+  ],
+  "glosario": [
+    {
+      "variable": "sexo",
+      "etiqueta": "Sexo",
+      "definicion": "Sexo reportado por el estudiante en PISA."
+    },
+    {
+      "variable": "ESCS",
+      "etiqueta": "Estatus socioeconómico",
+      "definicion": "Índice PISA de estatus económico, social y cultural. Valores mayores indican una posición socioeconómica más favorable."
+    },
+    {
+      "variable": "REPEAT",
+      "etiqueta": "Repetición escolar",
+      "definicion": "Indica si el estudiante ha repetido al menos un grado escolar."
+    },
+    {
+      "variable": "BELONG",
+      "etiqueta": "Sentido de pertenencia",
+      "definicion": "Índice PISA sobre el sentido de pertenencia del estudiante a su escuela. Se mantiene como variable de ajuste y no se muestra como control en el applet."
+    },
+    {
+      "variable": "SELFREG",
+      "etiqueta": "Autorregulación",
+      "definicion": "Índice de autorregulación del aprendizaje. Valores mayores indican mayor capacidad declarada para organizar y regular el propio aprendizaje."
+    },
+    {
+      "variable": "ia_ampliacion",
+      "etiqueta": "IA para ampliar el aprendizaje",
+      "definicion": "Uso de inteligencia artificial como apoyo para investigar y aprender, sin delegar por completo la tarea cognitiva."
+    },
+    {
+      "variable": "ia_sustitucion",
+      "etiqueta": "IA para sustituir trabajo cognitivo",
+      "definicion": "Uso de inteligencia artificial para resumir o producir trabajo escolar en sustitución de parte de la tarea cognitiva del estudiante."
+    }
+  ],
+  "nota": "El puntaje mostrado es una estimación estadística basada en asociaciones observadas en PISA 2025. No representa una predicción individual ni un efecto causal."
+}
