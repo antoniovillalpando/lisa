@@ -163,72 +163,134 @@
       line-height: 1.25;
     }
 
-    .cintillo {
-      width: 100%;
-      overflow: hidden;
-      border-top: 1px solid var(--borde);
-      border-bottom: 1px solid var(--borde);
-      background: var(--blanco);
-    }
-
-    .cintillo-viewport {
-      overflow: hidden;
-      width: 100%;
-    }
-
-    .cintillo-track {
-      display: flex;
-      width: max-content;
-      animation: cintillo-desplazamiento 24s linear infinite;
-      will-change: transform;
-    }
-
-    .cintillo:hover .cintillo-track {
-      animation-play-state: paused;
-    }
-
-    .cintillo-grupo {
-      display: flex;
+    .investigacion-destacada {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+      gap: 52px;
       align-items: center;
-      flex-shrink: 0;
-      min-width: 100vw;
-      padding: 0 32px;
+      padding: 42px;
+      border: 1px solid var(--borde);
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 84% 12%, rgba(205, 232, 218, 0.22), transparent 32%),
+        radial-gradient(circle at 8% 88%, rgba(202, 188, 239, 0.20), transparent 30%),
+        var(--blanco);
+      box-shadow: 0 16px 42px rgba(23, 45, 66, 0.06);
+      overflow: hidden;
     }
 
-    .cintillo-item {
-      display: inline-flex;
-      align-items: center;
-      min-height: 58px;
-      padding: 0 34px;
-      color: var(--azul);
-      font-size: 13px;
-      font-weight: 750;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      white-space: nowrap;
+    .investigacion-portada {
+      position: relative;
+      max-width: 370px;
+      margin: 0 auto;
     }
 
-    .cintillo-item::after {
-      content: "·";
-      margin-left: 68px;
+    .investigacion-portada img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 18px 42px rgba(23, 45, 66, 0.18);
+      transition: transform 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .investigacion-destacada:hover .investigacion-portada img {
+      transform: translateY(-4px) rotate(-0.35deg);
+      box-shadow: 0 24px 52px rgba(23, 45, 66, 0.22);
+    }
+
+    .investigacion-etiqueta {
+      display: inline-block;
+      margin-bottom: 14px;
       color: var(--verde);
-      font-size: 18px;
-      line-height: 1;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
-    @keyframes cintillo-desplazamiento {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+    .investigacion-contenido h3 {
+      max-width: 720px;
+      margin-bottom: 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(31px, 4vw, 52px);
+      font-weight: 500;
+      line-height: 1.08;
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .cintillo-track {
-        animation: none;
-      }
+    .investigacion-bajada {
+      max-width: 720px;
+      margin-bottom: 24px;
+      color: #4b4f56;
+      font-size: 19px;
+      line-height: 1.55;
+    }
 
-      .cintillo-grupo[aria-hidden="true"] {
-        display: none;
-      }
+    .investigacion-datos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .investigacion-datos span {
+      display: inline-block;
+      padding: 7px 11px;
+      border: 1px solid var(--borde);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.72);
+      color: var(--gris);
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .investigacion-applet {
+      max-width: 720px;
+      margin-bottom: 28px;
+      padding: 16px 18px;
+      border-left: 3px solid var(--verde);
+      background: rgba(247, 247, 248, 0.74);
+      color: #4b4f56;
+      font-size: 15px;
+    }
+
+    .investigacion-acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .boton-investigacion,
+    .boton-applet {
+      display: inline-block;
+      padding: 13px 18px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 750;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .boton-investigacion {
+      background: var(--azul);
+      color: var(--blanco);
+      box-shadow: 0 8px 18px rgba(23, 45, 66, 0.12);
+    }
+
+    .boton-investigacion:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(23, 45, 66, 0.18);
+    }
+
+    .boton-applet {
+      border: 1px solid var(--borde);
+      background: var(--blanco);
+      color: var(--azul);
+    }
+
+    .boton-applet:hover {
+      transform: translateY(-2px);
+      background: #f1f1f4;
     }
 
     section {
@@ -435,8 +497,22 @@
 
     @media (max-width: 820px) {
       .proyectos,
-      .direccion-red {
+      .direccion-red,
+      .investigacion-destacada {
         grid-template-columns: 1fr;
+      }
+
+      .investigacion-destacada {
+        gap: 34px;
+        padding: 26px;
+      }
+
+      .investigacion-portada {
+        max-width: 300px;
+      }
+
+      .investigacion-contenido h3 {
+        font-size: clamp(30px, 9vw, 44px);
       }
 
       nav {
@@ -511,6 +587,7 @@
 
         <div class="menu">
           <a href="#nosotros">Nosotros</a>
+          <a href="#investigacion">Investigación</a>
           <a href="#proyectos">Proyectos</a>
           <a href="#direccion">Dirección</a>
           <a href="#red">Red de colaboración</a>
@@ -539,26 +616,6 @@
       </div>
     </section>
 
-    <div class="cintillo" aria-label="Accesos destacados">
-      <div class="cintillo-viewport">
-        <div class="cintillo-track">
-
-          <div class="cintillo-grupo">
-            <a class="cintillo-item" href="reportes/pisa2025.html">Reporte analítico PISA 2025</a>
-            <a class="cintillo-item" href="reportes/pisa25applet/index.html">Simulador estadístico PISA 2025 · México</a>
-            <a class="cintillo-item" href="https://antoniovillalpando.github.io/lisa/reportes/pisa2025_2.html">Estudio PISA 2025 Desigualdades digitales</a>
-          </div>
-
-          <div class="cintillo-grupo" aria-hidden="true">
-            <a class="cintillo-item" href="reportes/pisa2025.html">Reporte analítico PISA 2025</a>
-            <a class="cintillo-item" href="reportes/pisa25applet/index.html">Simulador PISA 2025 · México</a>
-            <a class="cintillo-item" href="https://antoniovillalpando.github.io/lisa/reportes/pisa2025_2.html">Estudio PISA 2025 Desigualdades digitales</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
     <section id="nosotros">
       <div class="contenedor">
 
@@ -568,6 +625,57 @@
           <p>
             <strong>Laboratorio de Investigación Social Avanzada (LISA)</strong> es una empresa dedicada a la investigación social aplicada al desarrollo social en México, especialmente de los temas que tocan la calidad de vida y la viabilidad biográfica de las infancias. Nos especializamos en métodos cuantitativos, análisis territorial y evaluación de políticas públicas. Tenemos capacidad instalada para generar toda la cadena del proyecto de investigación: diseño conceptual, teórico y metodológico, generación de resultados con técnicas de vanguardia y creación de materiales de difusión para todos los públicos.
           </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="investigacion">
+      <div class="contenedor">
+
+        <h2>Investigación</h2>
+
+        <div class="investigacion-destacada">
+
+          <div class="investigacion-portada">
+            <img
+              src="pisa2025_portada.png"
+              alt="Portada del reporte analítico PISA 2025"
+            >
+          </div>
+
+          <div class="investigacion-contenido">
+            <span class="investigacion-etiqueta">PISA 2025 · México</span>
+
+            <h3>
+              PISA 2025
+            </h3>
+
+            <p class="investigacion-bajada">
+              Resultados, análisis y herramientas de LISA para explorar el desempeño educativo de México y las condiciones que estructuran las brechas de aprendizaje.
+            </p>
+
+            <div class="investigacion-datos" aria-label="Datos de la investigación">
+              <span>Reporte analítico</span>
+              <span>Perspectivas LISA · 01</span>
+              <span>México · 2026</span>
+            </div>
+
+            <p class="investigacion-applet">
+              La investigación incluye un simulador estadístico interactivo para explorar los resultados de México en PISA 2025.
+            </p>
+
+            <div class="investigacion-acciones">
+              <a class="boton-investigacion" href="investigacion/pisa2025/index.html">
+                Explorar PISA 2025 →
+              </a>
+
+              <a class="boton-applet" href="reportes/pisa25applet/index.html">
+                Abrir simulador
+              </a>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -605,23 +713,24 @@
             <span class="estado">En desarrollo</span>
 
             <h3>
-              Modelo de optimización geoespacial para los Centros de Educación y Cuidado Infantil del IMSS
-            </h3>
-
-            <p>
-              Herramientas de integración territorial, optimización y generación de recomendaciones para la localización de centros de cuidado infantil.
-            </p>
-          </article>
-
-          <article class="tarjeta">
-            <span class="estado">En desarrollo</span>
-
-            <h3>
               Cuestionario de Arquitectura Social del Aprendizaje
             </h3>
 
             <p>
               Instrumento de investigación para analizar las condiciones familiares, escolares y territoriales que estructuran los procesos de aprendizaje.
+            </p>
+          </article>
+
+
+          <article class="tarjeta">
+            <span class="estado">En desarrollo</span>
+
+            <h3>
+              Modelo de optimización geoespacial para los Centros de Educación y Cuidado Infantil del IMSS
+            </h3>
+
+            <p>
+              Herramientas de integración territorial, optimización y generación de recomendaciones para la localización de centros de cuidado infantil.
             </p>
           </article>
 
